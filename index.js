@@ -13,15 +13,16 @@ ASSIGNMENT RULES
 */
 
 
-/* When we are coding all the values we are dealing with (inputs, outputs, partial steps stored in some variables) belong to some Data Type
-There are a 5 which one we need to know:
-a) PRIMITIVES (Primitive data types):
+/*
+DATA TYPES:
+There are a 5 Primitive Data Types which one we need to know:
+ PRIMITIVES (Primitive data types):
  1. NUMBERS: they are represents a numeric values (100, 2.3)
  2. STRINGS: rapresents sequence of characters ("hello", `hello`, 'hello')
  3. BOOLEAN: logical entity, rapresents boolean value (false, true)
  4. UNDEFINED: they are exist yet, rapresents undefined value
  5. NULL: rapresents the empty value 
-b) STRUCTURE (Rapresenting structure data):
+ STRUCTURE (Rapresenting structure data)
  1. OBJECT: are used to rapresent more proprieties, all related to the same entity(to the same variable) 
  2. ARRAY: we are use them to rapresent a list of items, all with the same data types.
 
@@ -220,6 +221,12 @@ console.log("\n-----------------EXTRA EXERCISE 6-----------------\n");
 let firstString = "Hello world";
 let secondString = "nice to meet you";
 
+if(firstString.length > secondString.length){
+  console.log("is bigger")
+}else {
+  console.log("is shorter")
+}
+
 
 /*EX 7
  Write a piece of code for checking if a given value is a integer or not.
@@ -233,18 +240,29 @@ let givenValueTwo = "string";
 console.log(Number.isInteger(givenValue))
 console.log(Number.isInteger(givenValueTwo))
 
-
-/* WRITE YOUR ANSWER HERE */
-
 /*EX 8
  Write a piece of code for calculating a certain percentage of a given number.
  (Ex.: the 20% of 400 is 80)
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n-----------------EXTRA EXERCISE 8-----------------\n");
+
+let givenNumber = 400;
+let per = 20;
+let percentage = (400 / 100 * 20);
+
+console.log(percentage)
 
 /*EX 9
  Write a piece of code for checking if a given number is even or odd.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\n-----------------EXTRA EXERCISE 9-----------------\n");
+
+if(givenNumber%2 === 0){
+  console.log ("even");
+} else {
+  console.log ("odd");
+}
+
+console.log("\n--------------------------------------------------\n");
